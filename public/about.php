@@ -52,7 +52,7 @@
                     <p>I am proud to personally recommend the services of Consulter to an organization seeking a top-notch partner who can deploy effective outbound communication campaigns quickly and efficiently. They were extremely easy to work with in all aspects of my campaign.</p>
                   </div>
                   <div class="quote-modern-meta">
-                    <div class="quote-modern-avatar"><img src="images/testimonials-person-3-96x96.jpg" alt="" width="96" height="96"/>
+                    <div class="quote-modern-avatar"><img src="public/images/testimonials-person-3-96x96.jpg" alt="" width="96" height="96"/>
                     </div>
                     <div class="quote-modern-info">
                       <cite class="quote-modern-cite">Ranjan</cite>
@@ -68,7 +68,7 @@
                     <p>I have been working with Consulter for the past few months and they have accomplished an extraordinary effort in executing our Campaign and have delivered their skills and abilities to meet our promised targets. They have shown their excellence in providing top-notch support.</p>
                   </div>
                   <div class="quote-modern-meta">
-                    <div class="quote-modern-avatar"><img src="images/testimonials-person-1-96x96.jpg" alt="" width="96" height="96"/>
+                    <div class="quote-modern-avatar"><img src="public/images/testimonials-person-1-96x96.jpg" alt="" width="96" height="96"/>
                     </div>
                     <div class="quote-modern-info">
                       <cite class="quote-modern-cite">Ashish</cite>
@@ -84,7 +84,7 @@
                     <p>I just wanted to thank your customer service representative who contacted me twice regarding my order status. He left me a second message today with detailed information. I never had this superb customer service from any other companies before.</p>
                   </div>
                   <div class="quote-modern-meta">
-                    <div class="quote-modern-avatar"><img src="images/testimonials-person-2-96x96.jpg" alt="" width="96" height="96"/>
+                    <div class="quote-modern-avatar"><img src="public/images/testimonials-person-2-96x96.jpg" alt="" width="96" height="96"/>
                     </div>
                     <div class="quote-modern-info">
                       <cite class="quote-modern-cite">Rajesh</cite>
@@ -100,5 +100,5 @@
       </section>
       <!-- Map & contacts-->
       <?php
-        include 'public\components\contact-form.php';
+        include 'public/components/contact-form.php';
       ?>

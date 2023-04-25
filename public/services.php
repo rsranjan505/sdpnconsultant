@@ -123,5 +123,5 @@
       </section>
     
       <?php
-        include 'public\components\contact-form.php';
+        include 'public/components/contact-form.php';
       ?>
