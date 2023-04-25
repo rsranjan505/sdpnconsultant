@@ -1,18 +1,18 @@
 <?php
-    $name= $_POST['name'];
+    $first_name= $_POST['first_name'];
+    $last_name= $_POST['last_name'];
     $email= $_POST['email'];
     $mobile= $_POST['mobile'];
-    $subject= $_POST['subject'];
     $message= $_POST['message'];
 
-    if(isset($name) && isset($email) && isset($mobile) && isset($message) ) {
+    if(isset($first_name) && isset($email) && isset($mobile) && isset($message) ) {
 
         $message = [
-            'contact_email' => 'contact@maventrg.com',
-            'name' => $name,
+            'contact_email' => $contact_email,
+            'first_name' => $first_name,
             'mobile' => $mobile,
             'email' => $email,
-            'subject' => $subject,
+            'last_name' => $last_name,
             'msg' => $message,
         ];
 
@@ -37,19 +37,21 @@
     function send_email($data) {
 
         $to      = $data['contact_email'];
-        $name = $data['name'];
+        $subject = "Message from SDPN";
+        $first_name = $data['first_name'];
         $email = $data['email'];
         $mobile = $data['mobile'];
-        $subject = $data['subject'];
+        $last_name = $data['last_name'];
         $message = $data['msg'];
         $headers = 'From: '.$data['msg']       . "\r\n" .
                      'Reply-To: '.$data['contact_email'] . "\r\n" .
                      'X-Mailer: PHP/' . phpversion();
 
-        $message_data =nl2br('Nmae:-'.$name."\n"
+        $message_data =nl2br('First Name:-'.$first_name."\n"
+                        .'Last name:-'.$last_name."\n"
                         .'Email:-'.$email."\n"
                         .'Phone:-'.$mobile."\n"
-                        .'Subject:-'.$subject."\n"
+                        
                         .'Message:-'.$message."\n");
     
         if(mail($to, $subject, $message_data, $headers)){
