@@ -8,7 +8,7 @@
     if(isset($first_name) && isset($email) && isset($mobile) && isset($message) ) {
 
         $message = [
-            'contact_email' => $contact_email,
+            'contact_email' => 'contact@sdpnconsultant.com',
             'first_name' => $first_name,
             'mobile' => $mobile,
             'email' => $email,
