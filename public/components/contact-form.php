@@ -1,5 +1,5 @@
       <!-- Map & contacts-->
-      <section class="section bg-gray-100">
+      <section id="contact class="section bg-gray-100">
         <div class="range justify-content-xl-between">
           <div class="cell-xl-6 align-self-center container">
             <div class="row">
@@ -7,7 +7,7 @@
                 <div class="section-lg">
                   <h3 class="wow-outer"><span class="wow slideInDown">Contact Us</span></h3>
                   <!-- RD Mailform-->
-                  <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="contact"  action="public/php-email-form/send_email.php" method="POST" role="form" class="php-email-form">
+                  <form class="rd-form rd-mailform php-email-form" data-form-output="form-output-global" data-form-type="contact"  action="public/php-email-form/send_email.php" method="POST" role="form" >
                     <div class="row row-10">
                       <div class="col-md-6 wow-outer">
                         <div class="form-wrap wow fadeSlideInUp">
@@ -39,6 +39,12 @@
                           <textarea class="form-input" id="contact-message" name="message" data-constraints="@Required"></textarea>
                         </div>
                       </div>
+                    </div>
+                    
+                    <div class="my-3">
+                        <div class="loading">Loading</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message">Your message has been sent. Thank you!</div>
                     </div>
                     <div class="group group-middle">
                       <div class="wow-outer"> 
